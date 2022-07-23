@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+
+    <title>Portal Web</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS, los cambio jasiel no son los originales del template-->   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+     <!-- Add For Jasiel -->
+    <link rel="stylesheet" href="assets/lib/animate/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/oneplace.png" alt="Chain App Dev">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Inicio</a></li>
+              <li class="scroll-to-section"><a href="#services">Promociones</a></li>
+              <li class="scroll-to-section"><a href="#about">Cursos</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Cumpleaños</a></li>
+            <!--   <li class="scroll-to-section"><a href="#newsletter">Efemerides</a></li> -->
+              <!--<li class="scroll-to-section"><a href="#newsletter">Contacto</a></li> -->
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Iniciar Sesión</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Iniciar Sesión</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                 
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+               <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>         
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+ </div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Gracias por ser parte de la familia Simsa</h2>
+                    <p>Bienvenido a tu Portal Web</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Ver Más! <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                   <!--  <div class="white-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/oneplace2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!--ofertas-->
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4><em>Promociones &amp; Ofertas</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+           <!--  <p>Grupo Simsa realiza diversos convenios con diferentes negocios en busca de servicios de calidad, los cuaels les pueda otorgar a sus trabajadores, como increibles descuentos y promociones.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper swiper-oferta">       
+      <div class="swiper-wrapper">         
+        <div class="swiper-slide">
+          <img src="assets/images/ultimo-slider.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/principal-one.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/slider-2.png" alt="">
+        </div>   
+      </div>       
+      <div class="swiper-pagination"></div>  
+  </div>
+  </div>
+
+   <!--cursos-->
+   <div id="pricing" class="pricing-tables wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">         
+            <h4><em>Lo Que Puedes Aprender</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Sigue mejorando cada día, Capacitate!!</p>
+          </div>
+        </div>
+        <div class="swiper swiper-curso wow flipInX">       
+          <div class="swiper-wrapper">         
+            <div class="swiper-slide">
+              <div class="pricing-item-regular">
+                <!--  <span class="price">$12</span> -->
+                 <h4>Procedimiento de Servicio</h4>
+                 <div class="icon">
+                   <img src="assets/images/cursoicon.png" alt="">
+                 </div>
+                 <ul>
+                   <li>Integra los 10 puntos del decálogo de servicio para brindar un servicio de calidad.</li>             
+                 </ul>
+                 <div class="border-button">
+                   <a href="#">¡Vamos!</a>
+                 </div>
+               </div>
+            </div>
+            <div class="swiper-slide">                 
+              <div class="pricing-item-regular">
+                <!--  <span class="price">$25</span> -->
+                  <h4>Uniforme Operativo</h4>
+                  <div class="icon">
+                    <img src="assets/images/books.png" alt="">
+                  </div>
+                  <ul>
+                    <li>Muestra la imagen y equipo de trabajo que debe portar el despachador</li>             
+                  </ul>
+                  <div class="border-button">
+                    <a href="#">¡Vamos!</a>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">               
+              <div class="pricing-item-regular">
+                <!--<span class="price">$66</span>-->
+                  <h4>Trabajo en Equipo</h4>
+                  <div class="icon">
+                    <img src="assets/images/curso.png" alt="">
+                  </div>
+                  <ul>
+                    <li>Como relacionarte con tu entorno y con tus compañeros de trabajo para una mejor colaboración.</li>           
+                  </ul>
+                  <div class="border-button">
+                    <a href="#">¡Vamos!</a>
+                  </div>
+                </div>
+            </div>   
+          </div>       
+          <div class="swiper-pagination"></div>  
+      </div>        
+      </div>
+    </div>
+  </div> 
+
+  <!--cumpleaños-->
+  <div id="about" class="testimonials about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4><em>Cumpleaños</em></h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>
+              En esta empresa todos formamos parte de una gran familia, por eso, todos los integrantes de la misma, se complacen en desearte un feliz cumpleaños.
+              <em class="text-primary">¡Gracias por todo, disfruta muchísimo que lo mereces!</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+     
+      <div class="col-lg-12">
+        <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+          <div class="item">
+              <img src="assets/images/team-member-02.jpg" style="border-radius: 15px; opacity: 0.9;">
+              <h4>Sofia Luna</h4>
+              <span>Diseñadora</span>
+              <img src="assets/images/cake.png" alt="" class="cake">
+          </div>
+         <div class="item">
+             <img src="assets/images/team-member-03.jpg" alt="" style="border-radius: 15px; opacity: 0.9;">
+              <h4>Enrique Gutierrez</h4>
+              <span>Coordinador de Desarrollo</span>
+              <img src="assets/images/cake.png" alt="" class="cake">
+          </div>
+          <div class="item">
+            <img src="assets/images/team-member-04.jpg" alt="" style="border-radius: 15px; opacity: 0.9;">
+              <h4>Ezequiel Martinez</h4>
+              <span>Ingeniero de Software</span>
+              <img src="assets/images/cake.png" alt="" class="cake">
+          </div>
+          <div class="item">
+             <img src="assets/images/team-member-05.jpg" alt="" style="border-radius: 15px; opacity: 0.9;">
+              <h4>Ricardo Perez</h4>
+              <span>Desarrollador Web</span>
+              <img src="assets/images/cake.png" alt="" class="cake">
+          </div>                    
+        </div>
+      </div>
+
+    </div>
+  </div> 
+
+  <footer id="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="section-heading">
+              <h4>CONTÁCTENOS</h4>
+            </div>
+          </div>       
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h4>Dirección</h4>           
+              <p>Calle J. F. Brittingham #184 Cd. Industrial, Torreón, Coah.</p>
+              <p><a href="#">8717507171</a></p>
+              <p><a href="#">contacto@gruposimsa.com.mx</a></p>
+            </div>
+          </div>       
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h4>Enlaces útiles</h4>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linkedin</a></li>            
+              </ul>          
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-widget">
+              <h4>Di Hola</h4>            
+              <p style="text-align:justify">
+                Nos esforzamos mucho por lograr que usted tenga una buena experiencia en su área de trabajo, por lo que todos los comentarios son importantes para nosotros, agradecemos bastante cualquier opinión que nos pueda brindar. Gracias por tu reseña!!.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="copyright-text">
+              <p>Copyright © 2022 OnePlace. All Rights Reserved. 
+            <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">Innovación</a><br>          
+             Distributed By: <a href="https://themewagon.com/" target="_blank" title="Bootstrap Template World">Simsa</a>
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2">
+    <i class="fas fa-arrow-alt-circle-up"></i>
+  </a>  
+  
+  <!-- Scripts -->
+
+  <!-- Bootstrap core JavaScript, los cambio jasiel no son los originales del template -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+   <!--Add For Jasiel-->
+  <script src="assets/lib/wow/wow.min.js"></script>
+  <script src="assets/lib/easing/easing.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+
+  const swiper = new Swiper('.swiper-curso', 
+    {      
+      direction: 'horizontal',
+      loop: true,  
+      slidesPerView: 3,
+      spaceBetween: 30,
+      autoplay: {
+       delay: 2500,
+       disableOnInteraction: false,
+      },  
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+ 
+  const swiper2 = new Swiper('.swiper-oferta', 
+  {   
+    direction: 'horizontal',
+    loop: true, 
+    SlidesPerView: 4,   
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    }, 
+    pagination: {
+      el: '.swiper-pagination',
+    },
+   /*  breakpoints: {
+      // when window width is >= 640px
+      640: {
+        width: 640,
+        slidesPerView: 1,
+      },
+      // when window width is >= 768px
+      1024: {
+        width: 1120,
+        slidesPerView: 1,
+      }, 
+   } */
+  });
+
+     new WOW().init();
+
+     // Back to top button
+     $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+
+    $('.owl-testimonials').owlCarousel({
+		items:3,
+	  loop:true,
+		dots: true,
+		nav: false,
+		autoplay: true,
+		margin:15,
+		  responsive:{
+			  0:{
+				  items:1
+			  },
+			  600:{
+				  items:2
+			  },
+			  1000:{
+				  items: 4
+			  }
+		  }
+	  })
+
+  </script>
+
+</body>
+</html>
